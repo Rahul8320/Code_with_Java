@@ -1,0 +1,34 @@
+package Vender;
+
+import java.util.Scanner;
+
+public class Cricketer extends Player {
+
+	int total_runs = 0;
+	int total_wickets = 0;
+
+	Scanner sc = new Scanner(System.in);
+
+	public void setDetails() {
+		System.out.println("Enter name : ");
+		name = sc.nextLine();
+		System.out.println("Enter age : ");
+		age = sc.nextInt();
+		System.out.println("Enter country : ");
+		country = sc.next();
+		System.out.println("Enter total runs : ");
+		total_runs = sc.nextInt();
+		System.out.println("Enter total Wickets : ");
+		total_wickets = sc.nextInt();
+		sc.close();
+	}
+
+	public void getDetails() {
+		System.out.println("Name : " + name);
+		System.out.println("Age : " + age);
+		System.out.println("Country : " + country);
+		System.out.println("Total Runs : " + total_runs);
+		System.out.println("Total Wickets : " + total_wickets);
+	}
+
+}
